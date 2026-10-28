@@ -1,4 +1,4 @@
-# **Cybersecurity Lab Environment Setup**
+<h1 align="center"> Cybersecurity Lab Environment Setup </h1>
 
 ### **Objective**
 
@@ -14,22 +14,28 @@ To begin this set up, I downloaded VirtualBox from the official website which we
 
 <img width="1366" height="768" alt="virtualbox_network_ip" src="https://github.com/user-attachments/assets/735c1d65-417f-4677-820e-fa2f41b82f7b" />  
 
-
+<br>
+<br>
 Next, I downloaded Kali for VirtualBox, which took some time as it's a heavier app. After extracting with 7Zip and opening the VM in VirtualBox, I logged in using the default username and password (kali, kali). In the network settings, I set Wired Connection 1 to Manual and edited it to reflect the desired IP, 10.0.0.2 with a gateway of 10.0.0.1 with a DNS of 8.8.8.8 (Google Public DNS) as seen in the screenshots below.
 
+<br>
+<br>
+
 <img width="1280" height="674" alt="VirtualBox_kali-linux-SS1" src="https://github.com/user-attachments/assets/7f44f00e-82d7-42e7-be83-8fdbc05bb6ab" />  
+<br> 
+<br>
+After this, I tested to see if Kali had internet access by searching for something random on its Firefox, which in this case was red velvet.  <br>
+<br>
+
+<img width="1280" height="674" alt="virtualbox_kali-linux--internet-proof" src="https://github.com/user-attachments/assets/da2be0e0-f686-41bc-a848-804caeb5a86d" />
 
 
-
-After this, I tested to see if Kali had internet access by searching for something random on its Firefox, which in this case was red velvet.
-
-After confirming that Kali has internet access, I shut the virtual machine down and took a snapshot. The purpose of this snapshot is to function as a clean slate in the future, in case I need to reset the kali. 
+Once I confirmed that Kali has internet access, I shut the virtual machine down and took a snapshot. 
 
 ### **Problems encountered:**  
 None, as I have completed installations like this before and know my way around Kali Linux. 
 
-
-### **What I learned:**
+### **What I Learned:**
 * VM snapshots as an operational clean slate. This establishes a backup to counter accidental configuration drift, corrupted dependencies, or system breaks during high-risk exercises.  
 
 * NAT Network vs regular NAT. With NAT Network the Kali machine can reach out to the internet to download tools, and any target VMs added to this network in the future will be instantly discoverable by the Kali instance.
@@ -40,5 +46,5 @@ None, as I have completed installations like this before and know my way around 
 **Ashley-Megan Ikhialose Ehiede**  
 
 **Project Information:**  
-Program Name: Cybersecurity at Networkwalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup
+Program Name: Cybersecurity at NetworkWalks | Week: 01 | Project: Cybersecurity & Pentesting Lab Setup
 
